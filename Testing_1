@@ -1,0 +1,5 @@
+import pandas as pd
+data_path = "/Users/mariaramos/Dropbox/Merged_files/"
+file_name = "Test_data_PDO21"
+
+raw_df = pd.read_pickle(data_path + file_name)
