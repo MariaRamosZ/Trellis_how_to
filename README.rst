@@ -1,4 +1,4 @@
-# Trellis: Hierarchical Tree-Based Single-Cell Treatment Effect Analysis
+**Trellis: Hierarchical Tree-Based Single-Cell Treatment Effect Analysis**
 
 Here we demonstrate Trellis, a tool for hierarchical classification of single-cell samples that enables the fast and efficient calculaion of distances across thousands of distributions containing single-cell information. This is an interactive notebook, that can be run and edited to understand step by step the functionalities of Trellis and its derivates. 
 
