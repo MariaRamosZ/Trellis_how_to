@@ -6,6 +6,9 @@ The data set that we will be using is a subset of a larger dataset developped in
 
 In the pre-print, we present the data corresponding to PDOs from 10 different patients. For this demonstration, we use a subset of the data, using only one patient (PDO 21) and we will compare different treatments and culture conditions on these cells using Trellis. 
 
+![plot](https://github.com/MariaRamosZ/Trellis_how_to/blob/main/Ablation_draw.png)
+
+
 Trellis consists of the following steps:
 1. Design a fixed layer of markers based on prior knowledge and define +/- thresholds to classify the cells.
 2. Define a -leaf runner- function that performs k-means hierarchical clustering on the subtrees from 1. 
