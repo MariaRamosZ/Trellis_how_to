@@ -1,13 +1,6 @@
 **Trellis: Hierarchical Tree-Based Single-Cell Treatment Effect Analysis**
 
-Here we demonstrate Trellis, a tool for hierarchical classification of single-cell samples that enables the fast and efficient calculaion of distances across thousands of distributions containing single-cell information. This is an interactive notebook, that can be run and edited to understand step by step the functionalities of Trellis and its derivates. 
-
-The data set that we will be using is a subset of a larger dataset developped in our pre-print: ['Trellis Single-Cell Screening Reveals Stromal Regulation of Patient-Derived Organoid Drug Responses'](https://www.biorxiv.org/content/10.1101/2022.10.19.512668v2). This dataset was created with Colorectal Cancer (CRC) Patient-Derived Organoids (PDOs) that were treated with a range of chemotherapies and targeted therapies a varied ranges of concentrations. PDOs were treated alone, but also in 3D co-cultures with CRC Cancer-Associated Fibroblasts (CAFs) to understand the influence of this cell type in the responses to therapies of PDOs from different CRC patients. 
-
-In the pre-print, we present the data corresponding to PDOs from 10 different patients. For this demonstration, we use a subset of the data, using only one patient (PDO 21) and we will compare different treatments and culture conditions on these cells using Trellis. 
-
-![plot](https://github.com/MariaRamosZ/Trellis_how_to/blob/main/Ablation_draw.png)
-
+Trellis is a tool for hierarchical classification of single-cell samples that enables the fast and efficient calculaion of distances across thousands of distributions containing single-cell information. Further details on Trellis and its applicability in a single-cell drug screening of >2.500 heterocellular 3D samples is available in our pre-print: ['Trellis Single-Cell Screening Reveals Stromal Regulation of Patient-Derived Organoid Drug Responses'](https://www.biorxiv.org/content/10.1101/2022.10.19.512668v2). 
 
 Trellis consists of the following steps:
 1. Design a fixed layer of markers based on prior knowledge and define +/- thresholds to classify the cells.
@@ -15,3 +8,18 @@ Trellis consists of the following steps:
 3. Alternatively, define a -tree runner- function that performs k-means hierarchical clustering on the dataset (skipping step 1). This is refered to as TreEMD.
 4. Calculate parallel differential abundance between variables and internal conotrols (This is called -pairing- and it is also an optional step.
 5. Use PHATE on the resulting abundance matrix from 2, 3 or 4.
+
+Here is a representation of Trellis components, that can be used separately depending on the experimental question and the complexity of the dataset. 
+
+![plot](https://github.com/MariaRamosZ/Trellis_how_to/blob/main/Ablation_draw.png)
+
+
+By combining steps 1-4, we obtain different strategies to analyse large-scale datasets and create simple representations of the data:
+
+
+
+All four methods described here - TreEMD, Paired TreEMD, Unpaired Trellis, and Trellis - are useful methods for different purposes. TreEMD enables a fast optimal transport calculation of tree-ground distances between thousands of conditions when no specific weighting is required. This can be paired (Paired TreEMD) to internal controls to solve issues such as variability between samples or batch effects. Unpaired Trellis enables specific weighting of markers while still calculating efficiently tree-distances across samples when there is not a specific control (e.g. if the aim is to compare the baseline phenotype of all PDOs, without including treatments or CAF co-cultures). Finally, Paired Trellis enables the calculation of paired tree-ground distances, weighting for specific markers or features. 
+
+
+
+
