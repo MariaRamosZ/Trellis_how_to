@@ -14,12 +14,10 @@ Here is a representation of Trellis components, that can be used separately depe
 ![plot](https://github.com/MariaRamosZ/Trellis_how_to/blob/main/Ablation_draw.png)
 
 
-By combining steps 1-4, we obtain different strategies to analyse large-scale datasets and create simple representations of the data:
+By combining steps 1-4, we obtain different strategies to analyse large-scale datasets and create simple representations of the data. These are paire/unpaired TreEMD/Trellis:
 
+![plot](https://github.com/MariaRamosZ/Trellis_how_to/blob/main/Trellis_squares_concusion.png)
 
+All four methods described here - TreEMD, Paired TreEMD, Unpaired Trellis, and Trellis - are useful methods for different purposes. TreEMD enables a fast optimal transport calculation of tree-ground distances between thousands of conditions when no specific weighting is required. These can be paired (Paired TreEMD) to internal controls to solve issues such as variability between samples or batch effects. Unpaired Trellis enables specific weighting of markers while still calculating efficiently tree-distances across samples when there is not a specific control (e.g. if the aim is to compare the baseline phenotype of all PDOs, without including treatments or CAF co-cultures). Finally, Paired Trellis enables the calculation of paired tree-ground distances, weighting for specific markers or features. 
 
-All four methods described here - TreEMD, Paired TreEMD, Unpaired Trellis, and Trellis - are useful methods for different purposes. TreEMD enables a fast optimal transport calculation of tree-ground distances between thousands of conditions when no specific weighting is required. This can be paired (Paired TreEMD) to internal controls to solve issues such as variability between samples or batch effects. Unpaired Trellis enables specific weighting of markers while still calculating efficiently tree-distances across samples when there is not a specific control (e.g. if the aim is to compare the baseline phenotype of all PDOs, without including treatments or CAF co-cultures). Finally, Paired Trellis enables the calculation of paired tree-ground distances, weighting for specific markers or features. 
-
-
-
-
+A detailed demonstration of the different functionalities of Trellis and TreEMD and a step by step example can be found here: 
