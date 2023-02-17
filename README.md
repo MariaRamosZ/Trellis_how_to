@@ -1,6 +1,6 @@
 **Trellis: Hierarchical Tree-Based Single-Cell Treatment Effect Analysis**
 
-Trellis is a tool for hierarchical classification of single-cell samples that enables the fast and efficient calculaion of distances across thousands of distributions containing single-cell information. Further details on Trellis and its applicability in a single-cell drug screening of >2.500 heterocellular 3D samples is available in our pre-print: ['Trellis Single-Cell Screening Reveals Stromal Regulation of Patient-Derived Organoid Drug Responses'](https://www.biorxiv.org/content/10.1101/2022.10.19.512668v2). 
+Trellis is a tool for hierarchical classification of single-cell samples that enables the fast and efficient calculaion of distances across thousands of distributions containing single-cell information. Further details on Trellis and its applicability in a single-cell drug screening of >2.500 heterocellular 3D samples is available in our pre-print: ['Trellis Single-Cell Screening Reveals Stromal Regulation of Patient-Derived Organoid Drug Responses'](https://www.biorxiv.org/content/10.1101/2022.10.19.512668v2). A detailed demonstration of the different functionalities of Trellis and TreEMD and a step by step example can be found here: https://www.kaggle.com/code/mariaramosz/trellis
 
 Trellis consists of the following steps:
 1. Design a fixed layer of markers based on prior knowledge and define +/- thresholds to classify the cells.
@@ -19,5 +19,3 @@ By combining steps 1-4, we obtain different strategies to analyse large-scale da
 ![plot](https://github.com/MariaRamosZ/Trellis_how_to/blob/main/Trellis_squares_concusion.png)
 
 All four methods described here - TreEMD, Paired TreEMD, Unpaired Trellis, and Trellis - are useful methods for different purposes. TreEMD enables a fast optimal transport calculation of tree-ground distances between thousands of conditions when no specific weighting is required. These can be paired (Paired TreEMD) to internal controls to solve issues such as variability between samples or batch effects. Unpaired Trellis enables specific weighting of markers while still calculating efficiently tree-distances across samples when there is not a specific control (e.g. if the aim is to compare the baseline phenotype of all PDOs, without including treatments or CAF co-cultures). Finally, Paired Trellis enables the calculation of paired tree-ground distances, weighting for specific markers or features. 
-
-A detailed demonstration of the different functionalities of Trellis and TreEMD and a step by step example can be found here: https://www.kaggle.com/code/mariaramosz/trellis
