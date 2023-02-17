@@ -1,6 +1,6 @@
 **Trellis: Hierarchical Tree-Based Single-Cell Treatment Effect Analysis**
 
-Trellis is a tool for hierarchical classification of single-cell samples that enables the fast and efficient calculaion of distances across thousands of distributions containing single-cell information. Further details on Trellis and its applicability in a single-cell drug screening of >2.500 heterocellular 3D samples is available in our pre-print: ['Trellis Single-Cell Screening Reveals Stromal Regulation of Patient-Derived Organoid Drug Responses'](https://www.biorxiv.org/content/10.1101/2022.10.19.512668v2). A detailed demonstration of the different functionalities of Trellis and TreEMD and a step by step example can be found here: https://www.kaggle.com/code/mariaramosz/trellis
+Trellis is a tool for hierarchical classification of single-cell samples that enables the fast and efficient calculaion of distances across thousands of distributions containing single-cell information. Further details on Trellis and its applicability in a single-cell drug screening of >2.500 heterocellular 3D samples is available in our [pre-print](https://www.biorxiv.org/content/10.1101/2022.10.19.512668v2). We have also described [detailed demonstration of the different functionalities of Trellis and TreEMD and a step by step example](https://www.kaggle.com/code/mariaramosz/trellis)
 
 Trellis consists of the following steps:
 1. Design a fixed layer of markers based on prior knowledge and define +/- thresholds to classify the cells.
